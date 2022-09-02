@@ -161,7 +161,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                alt="logo"
              />
            </a>
-           <a href="#" className="toggle-button">
+           <a href="/" className="toggle-button">
              <span className="bar"></span>
              <span className="bar"></span>
              <span className="bar"></span>
@@ -210,7 +210,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
        <div className="container">
          <div className="row" data="#33EACE">
            <div className="col d-none d-lg-block">
-             <img src={Yoghurt} alt="yogurt-image" className="img-fluid" />
+             <img src={Yoghurt} alt="yogurt" className="img-fluid" />
            </div>
            <div className="col">
              <div ref={yoghurtRef} className="project fadeIn">
@@ -244,20 +244,21 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                  href="https://glittering-piroshki-cf285d.netlify.app/"
                  target="_blank"
                  className="btn btn-page mb-5"
+                 rel="noreferrer"
                >
                  View detail project
                </a>
              </div>
            </div>
            <div className="col d-none d-lg-block">
-             <img src={Weather} alt="weather-image" className="img-fluid" />
+             <img src={Weather} alt="weather" className="img-fluid" />
            </div>
          </div>
          <div className="row " data="#33EACE">
            <div className="col d-none d-lg-block">
              <img
                src={Dictionary}
-               alt="dictionary-image"
+               alt="dictionary"
                className="img-fluid"
              />
            </div>
@@ -273,6 +274,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                <a
                  href="https://deft-belekoy-1b7efc.netlify.app/ "
                  target="_blank"
+                 rel="noreferrer"
                  className="btn btn-page"
                >
                  View detail project
@@ -282,7 +284,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
          </div>
          <div className="row">
            <div className="col">
-             <div ref={adviceRef}  className=" advice project">
+             <div ref={adviceRef} className=" advice project">
                <h2 className="advice">Advice generator</h2>
                <p className="mb-5 text-muted">
                  Built this app using React and integrated with the API.This web
@@ -293,6 +295,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                  href="https://stupendous-biscotti-35bc52.netlify.app/"
                  target="_blank"
                  className="btn btn-page"
+                 rel="noreferrer"
                >
                  View detail project
                </a>

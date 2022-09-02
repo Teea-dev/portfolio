@@ -13,26 +13,26 @@ const Work =() =>{
        </div>
        <div className="row">
          <div className="col-md-6">
-           <img src={Yoghurt} className="img-fluid round mb-4" alt="" />
+           <img src={Yoghurt} className="img-fluid round mb-4" alt="yoghurt" />
            <h3 className="text-center">Yogurt Landing Page</h3>
            <p className="text-muted">Built with Html and Css</p>
          </div>
          <div className="col-md-6">
-           <img src={Dictionary} className="img-fluid round mb-4" />
+           <img src={Dictionary} alt='dictionary' className="img-fluid round mb-4" />
            <h3 className="text-center">Dictionary App</h3>
            <p className="text-muted">
              Built using Html, an active API,advanced Css and React
            </p>
          </div>
          <div className="col-md-6">
-           <img src={Weather} className="img-fluid round mb-4" alt="" />
+           <img src={Weather} className="img-fluid round mb-4" alt="weather" />
            <h3 className="text-center">Weather App</h3>
            <p className="text-muted">
              Built usiing Html, an active API and advanced Css and Javascript
            </p>
          </div>
          <div className="col-md-6">
-           <img src={Advice} className="img-fluid mb-4" alt="" />
+           <img src={Advice} className="img-fluid mb-4" alt="advice" />
            <h3 className="text-center">Advice Generator App</h3>
            <p className="text-muted">
              Built using Html,an active API,advanced Css and React
