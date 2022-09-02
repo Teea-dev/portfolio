@@ -21,7 +21,7 @@ const adviceRef = useRef(null);
 const adviceIntersection = useIntersection(adviceRef, {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5,
+  threshold: 0.3,
 });
 
 const adviceIn = () => {
@@ -29,7 +29,7 @@ const adviceIn = () => {
     duration: 1,
     opacity: 1,
     y: -30,
-    delay: 1,
+    delay: 1.5,
     ease: Power4.easeOut,
     stagger: {
       amount: 0.3,
@@ -45,7 +45,7 @@ const adviceOut = () => {
   });
 };
 
-adviceIntersection && adviceIntersection.intersectionRatio < 0.5
+adviceIntersection && adviceIntersection.intersectionRatio < 0.3
   ? adviceOut(".advice")
   : adviceIn(".advice");
 // ANIMATION FOR THE THIRD PARAGRAPH
