@@ -282,7 +282,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
          </div>
          <div className="row">
            <div className="col">
-             <div className="project">
+             <div ref={adviceRef}  className=" advice project">
                <h2 className="advice">Advice generator</h2>
                <p className="mb-5 text-muted">
                  Built this app using React and integrated with the API.This web
@@ -299,7 +299,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
              </div>
            </div>
 
-           <div ref={adviceRef} className="advice col d-none d-lg-block">
+           <div className=" col d-none d-lg-block">
              <img src={Advice} alt="advice app" className="img-fluid" />
            </div>
          </div>
