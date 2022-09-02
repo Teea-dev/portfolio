@@ -6,7 +6,7 @@ import Weather from "../assets/images/weather.png";
 import Dictionary from "../assets/images/dictionary.png";
 import Advice from "../assets/images/desktop-design.jpg";
 import './style.css';
-import {gsap,Power3,Power4 } from 'gsap';
+import {gsap,Power4 } from 'gsap';
 import { useIntersection } from 'react-use';
 
 const Home =()=>{
@@ -21,7 +21,7 @@ const adviceRef = useRef(null);
 const adviceIntersection = useIntersection(adviceRef, {
   root: null,
   rootMargin: "0px",
-  threshold: 0.3,
+  threshold: 1,
 });
 
 const adviceIn = () => {
@@ -45,7 +45,7 @@ const adviceOut = () => {
   });
 };
 
-adviceIntersection && adviceIntersection.intersectionRatio < 0.3
+adviceIntersection && adviceIntersection.intersectionRatio < 1
   ? adviceOut(".advice")
   : adviceIn(".advice");
 // ANIMATION FOR THE THIRD PARAGRAPH
