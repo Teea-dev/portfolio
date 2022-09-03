@@ -143,7 +143,7 @@ const fadeOut = () => {
 
 intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fadeIn('.fadeIn');
    useEffect(()=>{
-     gsap.to(heroRef.current, {opacity:0,delay:1.5, duration :1
+     gsap.to(heroRef.current, {opacity:1,delay:1.5, duration :1
     })
      
    })
