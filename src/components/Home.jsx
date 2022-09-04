@@ -1,16 +1,16 @@
-import{ React, useEffect, useRef} from 'react';
+import{ React, useEffect, useRef, useState} from 'react';
 import Logo from '../assets/images/logo.png';
 import Small from '../assets/images/logo-small.jpg';
 import Yoghurt from "../assets/images/yoghurt.png";
 import Weather from "../assets/images/weather.png";
 import Dictionary from "../assets/images/dictionary.png";
 import Advice from "../assets/images/desktop-design.jpg";
-import './style.css';
 import {gsap,Power4 } from 'gsap';
 import { useIntersection } from 'react-use';
+import './style.css';
 
 const Home =()=>{
-   
+ const[open, setOpen] = useState(false);  
 const heroRef = useRef(null);
 const yoghurtRef =useRef(null);
 const paragraphRef = useRef(null);
@@ -148,6 +148,10 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
      
    })
 
+   const openNav = () =>{
+   setOpen( !open);
+
+   }
 
    return (
      <>
@@ -161,16 +165,16 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                alt="logo"
              />
            </a>
-           <a href="/" className="toggle-button">
+           <div className="toggle-button" onClick={openNav}>
              <span className="bar"></span>
              <span className="bar"></span>
              <span className="bar"></span>
-           </a>
+           </div>
 
-           <div className="nav-links">
+           <div className= {`nav-links ${open ? "nav-links active" : " nav-links "}` }>
              <ul>
                <li>
-                 <a href="/" className="active " title="Homepage">
+                 <a href="/"  className="active " title="Homepage">
                    Home
                  </a>
                </li>
@@ -198,7 +202,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
          <h1>Ogunnoiki Adetokunbo</h1>
          <h2 className="mb-5">Front-end Developer,based in Nigeria</h2>
          <div>
-           <a href="/work.html" className="btn btn-button">
+           <a href="/work.html" className="btn first btn-button">
              {" "}
              Get started
            </a>
@@ -222,7 +226,7 @@ intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fade
                  a landing page about Yogurt. The page utilizes JavaScript
                  functions to create user interaction.
                </p>
-               <a href="/work.html" className="btn btn-page mb-5">
+               <a href="/work.html" className="btn btn-page details mb-5">
                  View detail project
                </a>
              </div>

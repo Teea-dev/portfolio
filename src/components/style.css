@@ -53,12 +53,15 @@ h1 {
   font-weight: normal;
 }
 .btn-button {
-  background: var(--brand-color);
+  background-color: var(--brand-color);
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   padding: 15px 25px;
   line-height: 27px;
+}
+.details{
+  background: #6c63ff;
 }
 .btn-page {
   border: 1px solid var(--brand-color);
@@ -160,7 +163,7 @@ footer .contact {
 }
 .toggle-button {
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -226,7 +229,7 @@ footer .contact {
   }
 
   .nav-links.active {
-    display: flex;
+    display: block;
+    margin: 0 auto;
   }
-
 }
